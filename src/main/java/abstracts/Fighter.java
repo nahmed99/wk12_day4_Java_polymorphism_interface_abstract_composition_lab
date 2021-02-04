@@ -3,7 +3,7 @@ package abstracts;
 import interfaces.IWeapon;
 import main.Club;
 
-public abstract class Fighter extends Player implements IWeapon {
+public abstract class Fighter extends Player { //implements IWeapon {
 
     private IWeapon weapon;
 
