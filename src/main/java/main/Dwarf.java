@@ -1,3 +1,5 @@
+package main;
+
 import abstracts.Fighter;
 import interfaces.IWeapon;
 
