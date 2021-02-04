@@ -31,4 +31,15 @@ public class DwarfTest {
         assertEquals(1, orc.getHealthPoints());
     }
 
+    @Test
+    public void canShieldBashEnemy() {
+        Orc orcTwo = new Orc(10, 6);
+
+        assertEquals(false, dwarf.getUsedSpecialAttack());
+
+        dwarf.shieldBash(orcTwo);
+        assertEquals(2, orcTwo.getArmour());
+        assertEquals(true, dwarf.getUsedSpecialAttack());
+    }
+
 }
